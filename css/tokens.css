@@ -1,0 +1,177 @@
+/* =============================================
+   APPLE DESIGN SYSTEM — DESIGN TOKENS
+   All values sourced from the Apple.com spec.
+   ============================================= */
+
+:root {
+  /* ─── BRAND & ACCENT ─── */
+  --color-primary: #0066cc;
+  --color-primary-focus: #0071e3;
+  --color-primary-on-dark: #2997ff;
+  --color-on-primary: #ffffff;
+
+  /* ─── SURFACES ─── */
+  --color-canvas: #ffffff;
+  --color-canvas-parchment: #f5f5f7;
+  --color-surface-pearl: #fafafc;
+  --color-surface-tile-1: #272729;
+  --color-surface-tile-2: #2a2a2c;
+  --color-surface-tile-3: #252527;
+  --color-surface-black: #000000;
+  --color-surface-chip-translucent: rgba(210, 210, 215, 0.64);
+
+  /* ─── TEXT ─── */
+  --color-ink: #1d1d1f;
+  --color-body: #1d1d1f;
+  --color-body-on-dark: #ffffff;
+  --color-body-muted: #cccccc;
+  --color-ink-muted-80: #333333;
+  --color-ink-muted-48: #7a7a7a;
+
+  /* ─── HAIRLINES & BORDERS ─── */
+  --color-divider-soft: rgba(0, 0, 0, 0.04);
+  --color-hairline: #e0e0e0;
+
+  /* ─── FONT FAMILIES ─── */
+  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* ─── TYPOGRAPHY TOKENS ─── */
+
+  /* hero-display: 56px / 600 / 1.07 / -0.28px */
+  --type-hero-display-size: 56px;
+  --type-hero-display-weight: 600;
+  --type-hero-display-lh: 1.07;
+  --type-hero-display-ls: -0.005em;
+
+  /* display-lg: 40px / 600 / 1.10 / 0 */
+  --type-display-lg-size: 40px;
+  --type-display-lg-weight: 600;
+  --type-display-lg-lh: 1.10;
+  --type-display-lg-ls: 0;
+
+  /* display-md: 34px / 600 / 1.47 / -0.374px */
+  --type-display-md-size: 34px;
+  --type-display-md-weight: 600;
+  --type-display-md-lh: 1.47;
+  --type-display-md-ls: -0.011em;
+
+  /* lead: 28px / 400 / 1.14 / 0.196px */
+  --type-lead-size: 28px;
+  --type-lead-weight: 400;
+  --type-lead-lh: 1.14;
+  --type-lead-ls: 0.007em;
+
+  /* lead-airy: 24px / 300 / 1.5 / 0 */
+  --type-lead-airy-size: 24px;
+  --type-lead-airy-weight: 300;
+  --type-lead-airy-lh: 1.5;
+  --type-lead-airy-ls: 0;
+
+  /* tagline: 21px / 600 / 1.19 / 0.231px */
+  --type-tagline-size: 21px;
+  --type-tagline-weight: 600;
+  --type-tagline-lh: 1.19;
+  --type-tagline-ls: 0.011em;
+
+  /* body-strong: 17px / 600 / 1.24 / -0.374px */
+  --type-body-strong-size: 17px;
+  --type-body-strong-weight: 600;
+  --type-body-strong-lh: 1.24;
+  --type-body-strong-ls: -0.022em;
+
+  /* body: 17px / 400 / 1.47 / -0.374px  (adjusted to 1.44 for Inter) */
+  --type-body-size: 17px;
+  --type-body-weight: 400;
+  --type-body-lh: 1.44;
+  --type-body-ls: -0.022em;
+
+  /* dense-link: 17px / 400 / 2.41 / 0 */
+  --type-dense-link-size: 17px;
+  --type-dense-link-weight: 400;
+  --type-dense-link-lh: 2.41;
+  --type-dense-link-ls: 0;
+
+  /* caption: 14px / 400 / 1.43 / -0.224px */
+  --type-caption-size: 14px;
+  --type-caption-weight: 400;
+  --type-caption-lh: 1.43;
+  --type-caption-ls: -0.016em;
+
+  /* caption-strong: 14px / 600 / 1.29 / -0.224px */
+  --type-caption-strong-size: 14px;
+  --type-caption-strong-weight: 600;
+  --type-caption-strong-lh: 1.29;
+  --type-caption-strong-ls: -0.016em;
+
+  /* button-large: 18px / 300 / 1.0 / 0 */
+  --type-button-large-size: 18px;
+  --type-button-large-weight: 300;
+  --type-button-large-lh: 1.0;
+  --type-button-large-ls: 0;
+
+  /* button-utility: 14px / 400 / 1.29 / -0.224px */
+  --type-button-utility-size: 14px;
+  --type-button-utility-weight: 400;
+  --type-button-utility-lh: 1.29;
+  --type-button-utility-ls: -0.016em;
+
+  /* fine-print: 12px / 400 / 1.0 / -0.12px */
+  --type-fine-print-size: 12px;
+  --type-fine-print-weight: 400;
+  --type-fine-print-lh: 1.0;
+  --type-fine-print-ls: -0.01em;
+
+  /* micro-legal: 10px / 400 / 1.3 / -0.08px */
+  --type-micro-legal-size: 10px;
+  --type-micro-legal-weight: 400;
+  --type-micro-legal-lh: 1.3;
+  --type-micro-legal-ls: -0.008em;
+
+  /* nav-link: 12px / 400 / 1.0 / -0.12px */
+  --type-nav-link-size: 12px;
+  --type-nav-link-weight: 400;
+  --type-nav-link-lh: 1.0;
+  --type-nav-link-ls: -0.01em;
+
+  /* ─── SPACING ─── */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 17px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+  --space-section: 80px;
+
+  /* ─── BORDER RADIUS ─── */
+  --rounded-none: 0px;
+  --rounded-xs: 5px;
+  --rounded-sm: 8px;
+  --rounded-md: 11px;
+  --rounded-lg: 18px;
+  --rounded-pill: 9999px;
+  --rounded-full: 50%;
+
+  /* ─── ELEVATION ─── */
+  --shadow-product: 3px 5px 30px 0 rgba(0, 0, 0, 0.22);
+  --shadow-none: none;
+  --border-hairline: 1px solid var(--color-hairline);
+  --border-divider-soft: 1px solid var(--color-divider-soft);
+
+  /* ─── BACKDROP ─── */
+  --backdrop-frosted: saturate(180%) blur(20px);
+
+  /* ─── TRANSITIONS ─── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* ─── CONTENT WIDTHS ─── */
+  --width-content: 980px;
+  --width-grid: 1440px;
+
+  /* ─── NAV HEIGHTS ─── */
+  --height-global-nav: 44px;
+  --height-sub-nav: 52px;
+}
