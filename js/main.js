@@ -184,4 +184,44 @@
       }, stepTime);
     });
   }
+
+  // ─── Apple TV+ Carousel Controller ───
+  const track = document.getElementById('tv-track');
+  const dots = document.querySelectorAll('.tv-dot');
+
+  if (track && dots.length > 0) {
+    let activeIndex = 0;
+    const cardWidth = 440; // 420px + 20px gap
+
+    function updateDots(index) {
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.add('tv-dot--active');
+        } else {
+          dot.classList.remove('tv-dot--active');
+        }
+      });
+    }
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        activeIndex = i;
+        track.scrollTo({
+          left: activeIndex * cardWidth,
+          behavior: 'smooth'
+        });
+        updateDots(activeIndex);
+      });
+    });
+
+    track.addEventListener('scroll', () => {
+      const scrollPos = track.scrollLeft;
+      const index = Math.round(scrollPos / cardWidth);
+      if (index !== activeIndex && index < dots.length) {
+        activeIndex = index;
+        updateDots(activeIndex);
+      }
+    });
+  }
 })();
+
